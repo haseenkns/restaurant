@@ -1,6 +1,11 @@
 <?php
+session_start();
 include_once("configuration/connect.php");
 include_once("configuration/functions.php");
+if(isset($_POST['submit'])){
+    $_SESSION['itemIds'] = $_POST['item_ids'];
+    header("location:order.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="zxx">
@@ -1782,7 +1787,7 @@ include_once("configuration/functions.php");
 <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
-            <form action="order.php" method="post">
+            <form action="" method="post">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title">Order Summary</h4>

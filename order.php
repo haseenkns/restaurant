@@ -1,9 +1,10 @@
 <?php
+session_start();
 include_once("configuration/connect.php");
 include_once("configuration/functions.php");
 
-if(isset($_POST['submit'])){
-    $item_ids = $_POST['item_ids'];
+if(isset($_SESSION['itemIds'])){
+   $item_ids = $_SESSION['itemIds'];
 }
 ?>
 
@@ -261,7 +262,7 @@ if(isset($_POST['submit'])){
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-8 col-xs-12  col-md-offset-3 col-sm-offset-2 col-xs-offset-0 heading-box text-center">
-                    <h1>Some special menu</h1>
+                    <h1>Your Orders</h1>
                 </div>
             </div>
         </div>
@@ -281,9 +282,8 @@ if(isset($_POST['submit'])){
          </div>-->
         <div class="row">
             <div id="lunch" class="tabcontent" style="display:block;" >
-
                 <?php
-                if(isset($_POST['submit'])){
+                if(isset($item_ids)){
                             $sqQry=mysql_query("select * from `food_menu` where id IN($item_ids) order by `id` desc ");
                             $i=0;
                             $numrow=mysql_num_rows($sqQry);
@@ -298,18 +298,17 @@ if(isset($_POST['submit'])){
                                                 <td><?php echo $i ?></td>
                                                 <td><?php echo $fetch['name'] ?></td>
                                                 <td>
-                                                    <select onchange="setQuantity(this.value,<?php echo $price ?>)">
+                                                    <select onchange="setQuantity(this.value,<?php echo $price ?>,<?php echo $i ?>)">
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
                                                     </select>
                                                 </td>
-                                                <td><span id="final_price"><?php echo $fetch['price'] ?></span></td>
+                                                <td><span id="final_price-<?php echo $i?>"><?php echo $fetch['price'] ?></span></td>
                                             </tr>
                                         </table>
                                     </div>
                              <?php }}}?>
                         </div>
-
             </div>
         </div>
     </div>
@@ -421,17 +420,14 @@ if(isset($_POST['submit'])){
 <script src="assets/plugin/megamenu/js/jquery.hover-dropdown-menu-addon.js"></script>
 <script src="assets/plugin/owl-carousel/js/owl.carousel.min.js"></script>
 
-
 <script type="text/javascript" src="assets/plugin/counter/js/jquery.countTo.js"></script>
 <script type="text/javascript" src="assets/plugin/counter/js/jquery.appear.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
-    function setQuantity(qty,price){
+    function setQuantity(qty,price,rowCount){
         var final_price = qty*price;
-        document.getElementById('final_price').innerHTML = final_price;
-
+        document.getElementById('final_price-'+rowCount).innerHTML = final_price;
     }
-
 </script>
 </body>
 </html>
