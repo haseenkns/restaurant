@@ -1,0 +1,47 @@
+/* Button red */
+a.button.button_red, a.button.button_red:after, a.tp-button.red {
+	background-color: #FC2A2A;
+	color: #fff;
+}
+
+/* Button orange */
+a.button.button_orange, a.button.button_orange:after, a.tp-button.orange {
+	background-color: #FF6E00;
+	color: #fff;
+}
+
+/* Button green */
+a.button.button_green, a.button.button_green:after, a.tp-button.green {
+	background-color: #88BE4C;
+	color: #fff;
+}
+
+/* Button blue */
+a.button.button_blue, a.button.button_blue:after, a.tp-button.blue {
+	background-color: #058BD3;
+	color: #fff;
+}
+
+/* Button grey */
+a.button.button_grey, a.button.button_grey:after, a.tp-button.grey {
+	background-color: #F1F1F1;
+	color: #444444;
+}
+
+/* Button seagreen */
+a.button.button_yellow, a.button.button_yellow:after {
+	background-color: #FFCC28;
+	color: #885a29;
+}
+
+/* Button darkgrey */
+a.tp-button.darkgrey, a.tp-button.darkgrey:after {
+	background-color: #555555;
+	color: #fff;
+}
+
+/* Button lightgrey */
+a.tp-button.lightgrey, a.tp-button.lightgrey:after {
+	background-color: #878787;
+	color: #fff;
+}

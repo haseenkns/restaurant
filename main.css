@@ -1,0 +1,90 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Restaurant - Multipurpose Html5 Template For Restaurant, Bar and Cafe
+Version:	1.0.0
+Assigned to:	Themeforest
+Primary use:	Restaurant, Bar, Cafe, Food, Meals, Dishes, Cakes, Icecream 
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Fonts
+2. Body
+3. Default Css
+   3.1 Reset Style
+   3.2 Form Inputs
+   3.3 Button Style
+   3.4 Padding Style
+   3.5 Margin Style
+4. Social Icon
+5. Custom Dropdown
+6. Search bar
+7. Header Style
+   7.1 Top Header
+   7.2 Navigation Bar
+8. Main Slider
+9. Heading Style
+10. Services
+11. Dishes Collection
+12. Banner Section
+13. Dishes Menu
+14. Sticker Style
+15. Opening Hours
+16. Special menu
+17. Our Team
+18. Testimonials
+19. Blog Section
+20. Page Header
+21. Register Page
+22. Sidebar
+23. Comment Area
+24. Owl Carousel Style
+25. Pagination
+26. Preloader
+27. Common Css
+    27.1 About
+    27.2 Admin Section
+    27.3 Theme Box
+    27.4 Theme Form
+28. Service Detail
+29. Gallery Page
+30. FAQ Page
+31. Dishes Page
+32. Error Page
+33. Contact Page
+34. Comming Soon
+35. Team Detail
+36. Landing Page
+37. Dish Filter
+38. User Profile
+39. Footer
+
+-------------------------------------------------------------------*/
+
+/*---bootstap.CSS ---*/
+@import url("assets/css/bootstrap.min.css");
+/*---mega menu .CSS ---*/
+@import url("assets/plugin/megamenu/css/hover-dropdown-menu.css");
+ /*---fancybox.CSS ---*/
+@import url("assets/plugin/fancyBox/css/jquery.fancybox.css");
+/*---acordian.CSS ---*/
+@import url("assets/plugin/acordian/css/jquery-ui.css");
+/*---owl-carousal.CSS ---*/
+@import url("assets/plugin/owl-carousel/css/owl.carousel.css");
+@import url("assets/plugin/owl-carousel/css/owl.theme.default.css");
+/*---fontawesome.CSS  font ---*/
+@import url("assets/plugin/font-awesome/css/font-awesome.min.css");
+/* theme effect hover CSS*/
+@import url("assets/plugin/hover-effect/css/themeHover.css");
+
+
+/*---STYLE.CSS inluad style---*/
+@import url("assets/css/style.css");
+
+/*---responsive.CSS inluad style---*/
+@import url("assets/css/responsive.css");
+
+/*---color.CSS inluad color---*/
+@import url("assets/css/color.css");

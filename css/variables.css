@@ -1,0 +1,107 @@
+/********************** Backgrounds **********************/
+
+/* #Wrapper */
+	#Wrapper {
+		background-color: #fff;
+	}
+
+/************************ Colors ************************/
+
+/* Selections */
+	*::-moz-selection {
+		color: #fff;
+	}
+	*::selection {
+		color: #fff;		
+	}
+	
+/* Reply button */
+	#comments .commentlist > li .reply a.comment-reply-link {
+		background-color: #787878;
+		color: #fff !important;
+	}
+
+/* Inputs */
+	input[type="text"], input[type="tel"], input[type="password"], input[type="email"], textarea, select {
+		background-color: #f3f3f3;
+		color: #999;
+	}
+	input[type="text"]:focus, input[type="tel"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus, select:focus {
+		background-color: #E9F5FC !important;
+		color: #1477B4;
+	}
+	
+/* Borders */
+	.feature_box_wrapper:after, .quick_fact_wrapper:after, .latest_posts_wrapper .photo, .latest_posts_wrapper .footer,
+	.testimonials_wrapper .client, .Recent_posts ul li .photo, table td, table th, .accordion .question h5, .faq .question h5,
+	.ui-tabs .ui-tabs-panel, pre, code, .contact_box ul li, .post_meta > div, .post_photo .photo_wrapper, .post_meta,
+	.post_navigation, .timeline_items li h5 span, .gallery .gallery-item .gallery-icon, .post,
+	.widget_categories ul li a, .widget_archive ul li a, .widget_mfn_menu ul li a, .Recent_comments ul li, .clients ul li .client_wrapper {
+		border-color: rgba(0, 0, 0, .12);
+	}
+	
+/* Menu */	
+	#Header .menu > li ul li a {
+		border-color: rgba(0, 0, 0, .05);
+	}
+	
+	#Header .menu > li ul li a:hover, #Header .menu > li ul li.hover > a {
+		background: rgba(0,0,0,.02);
+	}	
+
+/* Tabs */	
+	.ui-tabs .ui-tabs-nav li {
+		border-color: #e5e5e5;
+	}	
+	
+/* Icon links */
+	.icon_links a {
+		color: #444;
+	}
+	.icon_links a:hover {
+		color: #1e1e1e;
+	}
+	
+/* Fancy header */
+	.fancy_heading .inside {
+		color: #a0a2ab;
+	}
+	
+/* Latest posts */	
+	.latest_posts {
+		background: #fafafa;
+	}
+	
+/* Testimonials & Blockquote */
+	.testimonials_wrapper .desc .text, .blockquote .text {
+		color: #626262;
+	}
+
+/*** Footer ***/
+
+/* Border */
+	.widgets_wrapper .Recent_posts ul li .photo, .widgets_wrapper .Recent_comments ul li, .widgets_wrapper .widget_categories ul li a, 
+	.widgets_wrapper .widget_archive ul li a, .widgets_wrapper .widget_mfn_menu ul li a {
+		border-color: rgba(0, 0, 0, .12);
+	}
+
+
+/********************** Mobile menu **********************/
+
+@media only screen and (max-width: 959px) {
+	#Header .responsive-menu-toggle { 
+		background:#eff1f2;
+		color: #5b6977;
+	}
+	
+	.menu-clean #Header #menu { 
+		background:#fff;
+	}
+	
+	#Header #menu > ul > li.current-menu-item > a,
+	#Header #menu > ul > li.current_page_item > a,
+	#Header #menu > ul > li.current-menu-ancestor > a,
+	#Header #menu > ul > li.current_page_ancestor > a {
+		background: rgba(0,0,0,.02);
+	}
+}	

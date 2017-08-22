@@ -1,0 +1,14 @@
+.b, .c, .d, .e, .f, .h, .i, .j, .o { display:none;}
+
+.buttons{display:block;}
+
+.buttonHover{}
+
+a.buttons:hover{}
+ 
+#wrap{
+	text-align:left;
+	overflow:hidden;
+	width:350px;
+	height:380px;
+}

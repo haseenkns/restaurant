@@ -1,0 +1,46 @@
+/* product hover */
+.theme-hover figure{
+	position:relative;
+	overflow:hidden;
+}
+.theme-hover figure:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+	opacity:0;
+	visibility:hidden;
+	-webkit-transition: all 0.45s ease-in-out;
+    -moz-transition: all 0.45s ease-in-out;
+    -o-transition: all 0.45s ease-in-out;
+    -ms-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
+}
+.theme-hover:hover.theme-hover figure:after{
+	opacity:1;
+	visibility:visible;
+}
+.theme-hover:hover .sticker-box{
+	left:0;
+	visibility:hidden;
+	z-index:1;
+}
+.theme-hover:hover .sticker-tag{
+	opacity:1;
+	visibility:visible;
+}
+.theme-hover:hover  img {
+	opacity:1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+.theme-hover img {
+	opacity: 1;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1.05,1.05,1);
+	transform: scale3d(1.05,1.05,1);
+}
