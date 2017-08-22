@@ -1789,10 +1789,10 @@ include_once("configuration/functions.php");
             </div>
             <div class="modal-body">
                 <p><b id="pTxt"></b> items has been selected.</p>
-                <input type="text" id="item_ids">
+                <input type="text" name="item_ids" id="item_ids">
             </div>
             <div class="modal-footer">
-                <input type="submit" name="submit" class="btn btn-default" data-dismiss="modal" value="Place Order">
+                <input type="submit" name="submit" class="btn btn-default" value="Place Order">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Add More</button>
             </div>
             </form>
@@ -1815,12 +1815,20 @@ include_once("configuration/functions.php");
     function addToCart(item_id){
        //alert(item_id)
         numArray.push(item_id);
-        var item_count=numArray.length;
-        document.getElementById("pTxt").innerHTML = item_count;
-        document.getElementById("item_ids").value = numArray;
-        return false;
+        var unique = numArray.filter( onlyUnique );
 
+        console.log(unique)
+        var item_count=unique.length;
+        document.getElementById("pTxt").innerHTML = item_count;
+        document.getElementById("item_ids").value = unique;
+        return false;
     }
+    function onlyUnique(value, index, self) {
+        return self.indexOf(value) === index;
+    }
+
+    // usage example:
+
 </script>
 </body>
 </html>

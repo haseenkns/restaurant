@@ -15,17 +15,30 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="1785" column="38" lean-forward="true" selection-start-line="1785" selection-start-column="38" selection-end-line="1785" selection-end-column="38" />
+            <state relative-caret-position="254">
+              <caret line="1819" column="27" lean-forward="true" selection-start-line="1819" selection-start-column="27" selection-end-line="1819" selection-end-column="27" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#h4#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#93065#93072#0#HTML" expanded="true" />
-                <marker date="1503318736384" expanded="true" signature="41202:41250" ph="select * fro... ppac_category" />
-                <marker date="1503318736384" expanded="true" signature="41880:41942" ph="select * fro... food_menu" />
+                <marker date="1503387995284" expanded="true" signature="41202:41250" ph="select * fro... ppac_category" />
+                <marker date="1503387995284" expanded="true" signature="41880:41942" ph="select * fro... food_menu" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/order.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="431" column="0" lean-forward="true" selection-start-line="431" selection-start-column="0" selection-end-line="431" selection-end-column="0" />
+              <folding>
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1503392464302" expanded="true" signature="17129:17196" ph="select * fro... food_menu" />
               </folding>
             </state>
           </provider>
@@ -34,8 +47,8 @@
       <file leaf-file-name="menu.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/menu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="491" column="59" lean-forward="true" selection-start-line="491" selection-start-column="59" selection-end-line="491" selection-end-column="59" />
+            <state relative-caret-position="90">
+              <caret line="5" column="15" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="874" selection-end-column="0" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#span#0;n#h4#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -666,8 +679,8 @@
       <file leaf-file-name="category.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="5" selection-end-column="47" />
+            <state relative-caret-position="420">
+              <caret line="193" column="243" lean-forward="true" selection-start-line="193" selection-start-column="45" selection-end-line="193" selection-end-column="243" />
               <folding>
                 <marker date="1503233586000" expanded="true" signature="4399:4446" ph="select * fro... ppac_category" />
               </folding>
@@ -730,8 +743,9 @@
       <find>category</find>
       <find>Various menu</find>
       <find>Drinks</find>
-      <find>some</find>
       <find>ppac</find>
+      <find>form</find>
+      <find>some</find>
     </findStrings>
     <replaceStrings>
       <replace>food_menu</replace>
@@ -762,6 +776,7 @@
         <option value="$PROJECT_DIR$/menu.html" />
         <option value="$PROJECT_DIR$/menu.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/order.php" />
       </list>
     </option>
   </component>
@@ -920,12 +935,12 @@
       <workItem from="1503070680240" duration="1212000" />
       <workItem from="1503157356602" duration="669000" />
       <workItem from="1503231854944" duration="4467000" />
-      <workItem from="1503295282241" duration="23135000" />
+      <workItem from="1503295282241" duration="29399000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50344000" />
+    <option name="totallyTimeSpent" value="56608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -962,16 +977,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2880">
-          <caret line="160" column="93" lean-forward="true" selection-start-line="160" selection-start-column="93" selection-end-line="160" selection-end-column="93" />
-          <folding>
-            <marker date="1503232916000" expanded="true" signature="13520:13598" ph="select * fro... leadtypes" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3060">
@@ -1756,34 +1761,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="5" selection-end-column="47" />
-          <folding>
-            <marker date="1503233586000" expanded="true" signature="4399:4446" ph="select * fro... ppac_category" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="20" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1101" selection-end-column="7" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="491" column="59" lean-forward="true" selection-start-line="491" selection-start-column="59" selection-end-line="491" selection-end-column="59" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#h4#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1503312277082" expanded="true" signature="16993:17041" ph="select * fro... ppac_category" />
-            <marker date="1503312277082" expanded="true" signature="17731:17793" ph="select * fro... food_menu" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1799,16 +1781,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="193" column="243" lean-forward="true" selection-start-line="193" selection-start-column="45" selection-end-line="193" selection-end-column="243" />
+          <folding>
+            <marker date="1503233586000" expanded="true" signature="4399:4446" ph="select * fro... ppac_category" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="15" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="874" selection-end-column="0" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h4#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1503312277082" expanded="true" signature="16993:17041" ph="select * fro... ppac_category" />
+            <marker date="1503312277082" expanded="true" signature="17731:17793" ph="select * fro... food_menu" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="1785" column="38" lean-forward="true" selection-start-line="1785" selection-start-column="38" selection-end-line="1785" selection-end-column="38" />
+        <state relative-caret-position="254">
+          <caret line="1819" column="27" lean-forward="true" selection-start-line="1819" selection-start-column="27" selection-end-line="1819" selection-end-column="27" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#h4#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#93065#93072#0#HTML" expanded="true" />
-            <marker date="1503318736384" expanded="true" signature="41202:41250" ph="select * fro... ppac_category" />
-            <marker date="1503318736384" expanded="true" signature="41880:41942" ph="select * fro... food_menu" />
+            <marker date="1503387995284" expanded="true" signature="41202:41250" ph="select * fro... ppac_category" />
+            <marker date="1503387995284" expanded="true" signature="41880:41942" ph="select * fro... food_menu" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="431" column="0" lean-forward="true" selection-start-line="431" selection-start-column="0" selection-end-line="431" selection-end-column="0" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1503392464302" expanded="true" signature="17129:17196" ph="select * fro... food_menu" />
           </folding>
         </state>
       </provider>
