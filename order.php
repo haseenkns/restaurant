@@ -281,35 +281,79 @@ if(isset($_SESSION['itemIds'])){
              </div>
          </div>-->
         <div class="row">
-            <div id="lunch" class="tabcontent" style="display:block;" >
-                <?php
-                if(isset($item_ids)){
+            <div class="col-sm-12 mb-sm-30">
+                <div class="cart-item-table commun-table mb-30">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Sr. No.</th>
+                                <th>Item</th>
+                                <th>Quantity</th>
+                                <th>Sub Total</th>
+                                <th>Remove</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php
+                            if(isset($item_ids)){
                             $sqQry=mysql_query("select * from `food_menu` where id IN($item_ids) order by `id` desc ");
                             $i=0;
                             $numrow=mysql_num_rows($sqQry);
                             if($numrow>0){
-                                while($fetch=mysql_fetch_array($sqQry)){
-                                    $i++;
-                                    $price = $fetch['price'];
-                                    ?>
-                                    <div class="row">
-                                        <table border="1">
-                                            <tr>
-                                                <td><?php echo $i ?></td>
-                                                <td><?php echo $fetch['name'] ?></td>
-                                                <td>
-                                                    <select onchange="setQuantity(this.value,<?php echo $price ?>,<?php echo $i ?>)">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                    </select>
-                                                </td>
-                                                <td><span id="final_price-<?php echo $i?>"><?php echo $fetch['price'] ?></span></td>
-                                            </tr>
-                                        </table>
+                            while($fetch=mysql_fetch_array($sqQry)){
+                            $i++;
+                            $price = $fetch['price'];
+                            ?>
+                            <tr>
+                                <td><?php echo $i ?></td>
+                                <td><?php echo $fetch['name'] ?></td>
+                                <input type="hidden" id="price-<?php echo $i ?>" value="<?php echo $price ?>">
+
+                                <td>
+                                    <div data-id="100" class="col-md-4 selectpicker col-sm-4 col-xs-5 marB30 positionR">
+                                        <select class="form-control col-md-3" onchange="setQuantity(this.value,<?php echo $price ?>,<?php echo $i ?>)">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                        </select>
                                     </div>
-                             <?php }}}?>
-                        </div>
+                                </td>
+                                <td><div data-id="100" class="total-price price-box"><span id="final_price-<?php echo $i?>"><?php echo $fetch['price'] ?></span> </div></td>
+                                <td><i class="fa fa-trash cart-remove-item" data-id="100" title="Remove Item From Cart"></i></td>
+                            </tr>
+                            <?php }}} ?>
+                            <input type="hidden" id="count" value="<?php echo $i ?>">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="cart-total-table commun-table mb-30">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th colspan="2">Cart Total</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Item(s) Subtotal</td>
+                                <td><div class="price-box"> <span id="sub_total" class="price">Rs.160.00</span> </div></td>
+                            </tr>
+                            <tr>
+                                <td>Shipping</td>
+                                <td><div class="price-box"> <span class="price">Rs.0.00</span> </div></td>
+                            </tr>
+                            <tr>
+                                <td><b>Amount Payable</b></td>
+                                <td><div class="price-box"> <span id="total" class="price"><b>Rs.160.00</b></span> </div></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
+        </div>
         </div>
     </div>
 </section>
@@ -426,6 +470,23 @@ if(isset($_SESSION['itemIds'])){
 <script>
     function setQuantity(qty,price,rowCount){
         var final_price = qty*price;
+        var count = document.getElementById('count').value;
+        var i=1;
+        var total=0;
+        var item_price=0;
+        for(i=1; i<=count;i++){
+            if(i==rowCount)
+            {
+                document.getElementById('price-'+i).value=final_price;
+                //alert(i)
+            }
+
+            item_price=document.getElementById('price-'+i).value;
+            var item_price=parseFloat(item_price);
+            total+=item_price;
+        }
+        alert(total)
+
         document.getElementById('final_price-'+rowCount).innerHTML = final_price;
     }
 </script>

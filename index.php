@@ -1790,11 +1790,11 @@ if(isset($_POST['submit'])){
             <form action="" method="post">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Order Summary</h4>
+                <h3 class="modal-title">Order Summary</h3>
             </div>
             <div class="modal-body">
-                <p><b id="pTxt"></b> items has been selected.</p>
-                <input type="text" name="item_ids" id="item_ids">
+                <p style="font-size: 18px"><b id="pTxt"></b> item has been selected.</p>
+                <input type="hidden" name="item_ids" id="item_ids">
             </div>
             <div class="modal-footer">
                 <input type="submit" name="submit" class="btn btn-default" value="Place Order">
